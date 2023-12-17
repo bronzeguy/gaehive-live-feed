@@ -25,5 +25,5 @@ while True:
     res.reverse()
     for i in res:
         i["content"] = i["content"].replace("\n", " ")
-        print(f"{i['author']['username']}: {i['content']} ({i['reply_count']} replies)")
+        print(f"<{i['author']['username']}> {i['content']} ({i['reply_count']} replies)")
     old = x
